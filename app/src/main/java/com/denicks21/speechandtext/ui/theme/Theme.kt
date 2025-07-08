@@ -1,5 +1,6 @@
 package com.denicks21.speechandtext.ui.theme
 
+import android.annotation.SuppressLint
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.darkColors
@@ -8,15 +9,16 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 
 // Paleta de colores para modo oscuro
+@SuppressLint("ConflictingOnColor")
 private val DarkColorPalette = darkColors(
     primary         = GradientStart,    // color principal (botones, iconos activos…)
     primaryVariant  = GradientEnd,      // variante para estados presionados
     secondary       = LightGrey,        // color secundario (acentos, iconos secundarios)
     background      = GradientStart,    // fondo general
     surface         = DarkSurface,      // fondo de cards, diálogos…
-    onPrimary       = Color.White,      // texto/icono sobre primary
-    onSecondary     = Color.White,      // texto/icono sobre secondary
-    onBackground    = Color.White,      // texto sobre background
+    onPrimary       = TextTest,      // texto/icono sobre primary
+    onSecondary     = AlertOff,      // texto/icono sobre secondary
+    onBackground    = LightYellow,      // texto sobre background
     onSurface       = LightText,        // texto sobre surface
     error           = ErrorColor        // mensajes de error
     

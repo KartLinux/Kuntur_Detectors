@@ -25,7 +25,9 @@ val DarkGrey  = Color(0xFF000000)
 
 // — Textos —
 val LightText = Color(0xFFFDFDFD)
-val DarkText  = Color(0xFF852E2E)
+val DarkText  = Color(0xFF182934)
+val TextTest  = Color(0xFFD8B0FA)
+
 
 // — Complementarios (errores, acentos, etc.) —
 val ErrorColor    = AlertOff
