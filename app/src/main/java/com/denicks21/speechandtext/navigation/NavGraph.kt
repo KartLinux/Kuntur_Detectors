@@ -12,6 +12,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.denicks21.speechandtext.MainActivity
 import com.denicks21.speechandtext.screen.*
+import com.denicks21.speechandtext.ui.camera.CameraPreviewScreen
 import com.denicks21.speechandtext.ui.composables.AppBottomBar
 import com.denicks21.speechandtext.ui.composables.AppTopBar
 import com.denicks21.speechandtext.viewmodel.HomeViewModel
@@ -64,8 +65,8 @@ fun NavGraph(
                 composable(NavScreens.HistoryPage.route) {
                     HistoryPage(navController)
                 }
-                composable(NavScreens.ContactsPage.route) {
-                    ContactsPage(navController)
+                composable(NavScreens.CameraPreviewScreen.route) {
+                    CameraPreviewScreen(navController)
                 }
                 composable(NavScreens.MapPage.route) {
                     MapPage(navController)

@@ -29,7 +29,7 @@ fun AppBottomBar(navController: NavController) {
     val items = listOf(
         NavScreens.HistoryPage  to R.drawable.ic_history,
         NavScreens.HomePage     to R.drawable.ic_monitor,
-        NavScreens.ContactsPage to R.drawable.ic_contacts,
+        NavScreens.CameraPreviewScreen to R.drawable.ic_contacts,
         NavScreens.MapPage      to R.drawable.ic_map
     )
 
@@ -65,7 +65,7 @@ fun AppBottomBar(navController: NavController) {
                 val labelText = when (screen) {
                     NavScreens.HomePage     -> "Monitor"
                     NavScreens.HistoryPage  -> "Historial"
-                    NavScreens.ContactsPage -> "Contactos"
+                    NavScreens.CameraPreviewScreen -> "Camara"
                     NavScreens.MapPage      -> "Encontrar"
                     else                    -> ""
                 }

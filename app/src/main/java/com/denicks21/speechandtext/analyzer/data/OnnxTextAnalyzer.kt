@@ -57,7 +57,7 @@ class OnnxTextAnalyzer(private val context: Context) : ITextAnalyzer {
     override suspend fun analyze(text: String): AnalysisResult = withContext(Dispatchers.IO) {
         // 1) Tokenización WordPiece
         val tokens = tokenizer.tokenize(text)
-        val seqLen = 19
+        val seqLen = 33
         val inputIds = LongArray(seqLen) { idx ->
             vocab[tokens.getOrNull(idx)]?.toLong() ?: vocab["[PAD]"]!!.toLong()
         }
